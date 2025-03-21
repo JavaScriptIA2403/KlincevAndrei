@@ -1,7 +1,6 @@
 import transactions from "./transactions.js";
 
 function getUniqueTransactionTypes(trans){
-    //let unuqueTransTypesArr=new Set();
     
     //unuqueTransTypesArr.add(trans[0].filter(t => t.transaction_type => ));
 
