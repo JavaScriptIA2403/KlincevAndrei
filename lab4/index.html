@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/siteIcon.png" type="image/x-icon">
+</head>
+<body>
+    <table id="inventroryTable">
+        <tr>
+            <th>
+                Название предмета
+            </th>
+            <th>
+                Категория
+            </th>
+            <th>
+                Редкость
+            </th>
+            <th>
+                Удаления предмета
+            </th>
+        </tr>
+        <tr>
+            <td id="addNewItem" width = "100%" colspan="4">
+                +
+            </td>
+        </tr>
+    </table>
+
+    <p id = "itemDiscription"></p>
+
+
+<div id = "inputNewItemBlock" style="visibility: hidden;">
+        <h2>Добавить предмет</h2>
+        <form id="item-form">
+            <table width="100%">
+                <tr>
+                    <td ><label for="itemName">Название:</label></td>
+                    <td ><input type="text" id="itemName" name="name" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="itemDescription">Описание:</label></td>
+                    <td><textarea id="itemDescription" name="description" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="itemCategory">Категория:</label></td>
+                    <td><select id="itemCategory" name="category" required>
+                        <option value="">----</option>
+                        <option value="armor">Броня</option>
+                        <option value="weapon">Оружие</option>
+                        <option value="potion">Зелье</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="itemRarity">Редкость:</label></td>
+                    <td><select id="itemRarity" name="rarity" required>
+                        <option value="">----</option>
+                        <option value="common">Обычный</option>
+                        <option value="uncommon">Необычный</option>
+                        <option value="rare">Редкий</option>
+                        <option value="legendary">Легендарный</option>
+                        </select></td>
+                </tr>
+                 
+                <tr id="damageField" style="visibility: hidden;">
+                    <td><label for="itemDamage">Урон:</label> </td>
+                    <td><input type="number" id="itemDamage" name="damage" min="1" /></td>
+                </tr>
+                
+            </table>
+        </form>
+        
+            <div id = "addButtonsBlock">
+                <button type="submit" id="submitFormAdding">Добавить</button><br>
+                <button type="button" id = "clearFormAdding">ОТмена</button>
+            </div>
+
+</div>
+    <p id = "totalInventoryItems"></p>
+
+
+    <script src="src/index.js" type="module"></script>
+    <script src="src/utils.js" type="module"></script>
+</body>
+</html>
