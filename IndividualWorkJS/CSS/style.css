@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoCondensed-VariableFont_wght.ttf");
+}
+
+@media (min-width:929px){
+    main{
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:1172px){
+    main{
+        margin-top: 180px;
+    }
+}
+
+@media (max-width:1096px){
+    main{
+        margin-top: 150px;
+    }
+}
+@media (max-width:847px){
+    main{
+        margin-top: 180px;
+    }
+}
+@media (max-width:620px){
+    main{
+        margin-top: 220px;
+        margin-bottom: 390px;
+    }
+}
+@media (max-width:539px){
+    main{
+        margin-top: 280px;
+        margin-bottom: 400px;
+    }
+}
+img:hover{
+    transform: scale(1.05);
+    transition: 0.01  0.5;
+}
+
+header{
+    width: 100%;
+    
+    z-index: 100;
+
+    position: fixed;
+    float: left;
+    background-color: black;
+    font-family:'Oswald','Roboto' , 'Cascadia Mono SemiBold', 'Cascadia Code',  sans-serif;
+    font-size: 20px;
+    margin-left: 0px;
+
+}
+
+
+.top_menu{
+    display: inline-block;
+    list-style-type: none;
+    flex: auto;
+    flex-wrap: wrap;
+
+}
+
+
+.top_menu li{
+    
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+    float: left;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ a:hover{
+    color:red;
+    text-decoration-color: red;
+}
+
+
+input.search{
+    width: 250px;
+    height: 90%;
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: aliceblue;
+}
+
+
+input.search::placeholder{
+    color: rgb(199, 199, 199);
+}
+
+input.submit{
+    width: 20px;
+    height: 20px;
+    background: url('../image/magnifier.png') no-repeat center center; /* Указываем фон с изображением */
+    background-size: cover;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input.submit:hover{
+    background: url('../image/magnifier_red.png') no-repeat center center; 
+    background-size: cover;
+}
+
+div.search_box{
+ 
+    border: 1px solid #ffffff;
+    height: 40px;
+    display: inline;
+    float: left;
+    
+}
+
+
+main p,main h1,main h2,main h3,main h4,main h5,main h6{
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+    margin-top: 0;
+    margin-left: 0pxs;
+}
+
+
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+}
+
+.main_container p{
+    
+}
+
+
+.product_table{
+    display: grid;
+    gap:2%;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 4fr));
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.product_plate {
+    padding: 2%;
+    border-radius: 5px 5px 5px 5px;
+    border-color: rgb(33, 33, 33);
+    border-width: 2px;
+    border-style:dashed;
+    height: 340px;
+    background-color: transparent;
+    
+}
+
+.product_plate:hover{
+    border-color: rgb(255, 0, 0);
+    transform: scale(1.05);
+    transition: 0.01  0.5;
+
+}
+
+.product_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+
+}
+.product_image img{
+    height: 90%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product_coast_buy{
+    height: 13%;
+    width: 100%;
+    display: inline-block;
+
+}
+button{
+    width: 55px;
+    height: 95%;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    right: 10px;
+    float: right;
+    margin-right: 5%;
+}
+
+ button:hover{
+    border-color: red;
+    transform: scale(1.05);
+    transition: 0.01  0.5;
+}
+
+.product_coast_buy button img{
+    width: 65%;
+    margin-top: 3%;
+    
+}
+
+
+.product_info h2{
+    font-size: 20px;
+}
+
+footer{
+    width: 80%;
+    border-radius:5px 5px 5px 5px;
+    background-color: black;
+    color:aliceblue;
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.footer_menu {
+    display:list-item;
+    list-style-type:none;
+    font-family: 'Roboto', 'Cascadia Mono SemiBold', 'Cascadia Code' , sans-serif;
+    flex:auto;
+}
+
+.footer_menu li{
+    padding: 10%px;
+}
+
+
+

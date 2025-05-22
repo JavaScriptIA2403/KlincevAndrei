@@ -1,0 +1,29 @@
+.acc_form{
+    display: flex;
+    width: 25%;
+    margin: auto;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: dashed;
+    margin-bottom: 30px;
+    font-family:'Oswald','Roboto' , 'Cascadia Mono SemiBold', 'Cascadia Code',  sans-serif;
+}
+.acc_form form{
+    padding-top: 0px;
+    width: 100%;
+    padding: 5%;
+    padding-bottom: 25%;
+}
+.acc_form input{
+    align-items: center;
+    border-radius: 5px;
+    height: 20%;
+    width: 100%;
+}
+.acc_form input:hover{
+    border-color: red;
+    transform: scale(1.05);
+    transition: 0.01  0.5;
+}
+
